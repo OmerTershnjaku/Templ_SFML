@@ -11,7 +11,7 @@ int main() {
 
 
     sf::Texture texture;
-    if (!texture.loadFromFile("C:\\AAAAAAAAAA\\test.png)))", sf::IntRect(0, 0, 512, 512))) {
+    if (!texture.loadFromFile(R"(C:\Users\1764331 G731GU-EV261\OneDrive\Desktop\LOL\GAMES\SF\resources\images\test.png)", sf::IntRect(0, 0, 512, 512)))
         {
             std::cout << "Texture not loading!!!!!!!!!" << std::endl;
         }
@@ -42,4 +42,4 @@ int main() {
 
         return 0;
     }
-}
+
