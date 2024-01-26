@@ -18,7 +18,9 @@ file(GLOB ALL_SOURCE_FILES src/*.cpp)
 file(GLOB ALL_HEADER_FILES include/*.hpp)
 
 # Add the main target.
-add_executable(${PROJECT_NAME} ${ALL_SOURCE_FILES} ${ALL_HEADER_FILES})
+add_executable(${PROJECT_NAME} ${ALL_SOURCE_FILES} ${ALL_HEADER_FILES}
+        src/game.cpp
+        include/game.h)
 
 # Use C++17 standards
 set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 17)
